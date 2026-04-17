@@ -18,8 +18,8 @@ graph TD
     Client[React Frontend <br/> Vite, Context API] -->|REST API Requests <br/> Axios | Router
     
     subgraph Express Backend
-        Router[API Router] --> AuthRoute[/api/auth]
-        Router --> UserRoute[/api/users]
+        Router[API Router] --> AuthRoute["/api/auth"]
+        Router --> UserRoute["/api/users"]
         
         AuthRoute --> AuthCtrl[Auth Controller]
         UserRoute --> JwtMid[JWT Middleware]
